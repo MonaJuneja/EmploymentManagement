@@ -7,7 +7,6 @@ public class ScannerMethods {
 	public static String scannerString(String printString){
 		System.out.println(printString);
 		String inputName = MainMenu.ourScanner.nextLine();
-		MainMenu.ourScanner.nextLine();
 		return inputName;
 	}
 	
@@ -15,7 +14,6 @@ public class ScannerMethods {
 	public static double scannerDouble(String printString){
 		System.out.println(printString);
 		double inputDouble = MainMenu.ourScanner.nextDouble();
-		MainMenu.ourScanner.nextLine();
 		return inputDouble;
 	}
 	
