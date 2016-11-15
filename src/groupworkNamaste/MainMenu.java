@@ -11,7 +11,13 @@ public class MainMenu {
 		
 		
 		EmployeeManagement.enterEmployee();
-		public void printArrayList();
+		
+		if (XElissastestingMethods.checkIfArrayIsEmpty()){
+			XElissastestingMethods.printArrayList();
+		} else {
+			System.out.println("The array is empty.");
+		}
+		
 		
 //		CategoryProgrammer programmer= new CategoryProgrammer("Mona", 123456789.1,1986,"Programmer",456,45);
 //		CategoryProgrammer programmer2= new CategoryProgrammer("Maria", 12345,1990,"Programmer",456,45);

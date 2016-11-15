@@ -1,6 +1,7 @@
 package groupworkNamaste;
 
 public abstract class SuperClassEmployee {
+
 	private String name;
 	private double salary;
 	private int yearOfBirth;
@@ -24,7 +25,11 @@ public abstract class SuperClassEmployee {
 	public abstract double bonusCalculation();
 	
 	
-	
+	@Override
+	public String toString() {
+		return "SuperClassEmployee [name=" + name + ", salary=" + salary + ", yearOfBirth=" + yearOfBirth
+				+ ", category=" + category + ", employmentId=" + employmentId + "]";
+	}
 	
 	//GETTERS AND SETTERS
 	public EnumCategory getCategory() {

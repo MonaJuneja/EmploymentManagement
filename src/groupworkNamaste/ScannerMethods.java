@@ -15,7 +15,7 @@ public class ScannerMethods {
 	public static double scannerDouble(String printString){
 		System.out.println(printString);
 		double inputDouble = MainMenu.ourScanner.nextDouble();
-		MainMenu.ourScanner.nextLine(); //after capturing an "int" we need to clean the input by capturing the "enter" (scanner bug)
+		MainMenu.ourScanner.nextLine(); //after capturing an "double" we need to clean the input by capturing the "enter" (scanner bug)
 		return inputDouble;
 	}
 	

@@ -19,6 +19,8 @@ public class EmployeeManagement {
 		String inputName = ScannerMethods.scannerString("Please enter the data related to the new employee.\nName:");
 		double inputSalary = ScannerMethods.scannerDouble("Salary:");
 		int inputYearOfBirth = ScannerMethods.scannerInt("Year of birth:");
+		//TODO: try-catch if/switch for incorrect input
+		//TODO: if statement with logical OR || to check values
 		String inputCategoryName = ScannerMethods.scannerString("Employee category: \n(MT for Management, PR for Programmers, TE for Testers, AD for Admin MG for Marketing)");
 		
 		// TODO: CONTINUE WITH SWITCH
@@ -27,7 +29,6 @@ public class EmployeeManagement {
 		switch (inputCategoryName) {
 		case "MT":
 			category = EnumCategory.MT;
-			System.out.print("Years of experience:");
 			int inputYearsOfExperience = ScannerMethods.scannerInt("Years of experience:");
 			
 			//CREATE A NEW MANAGEMENT PERSON
@@ -35,6 +36,7 @@ public class EmployeeManagement {
 			employeeList.add(cm);
 			System.out.println(cm);
 			break;
+			
 		case "PR":
 			category = EnumCategory.PR;
 			int noOfCompletedProjects = ScannerMethods.scannerInt("Number of programs completed:");
@@ -53,6 +55,26 @@ public class EmployeeManagement {
 			CategoryTesters ct = new CategoryTesters(inputName, inputSalary, inputYearOfBirth, category, noOfTestedProjects);
 			employeeList.add(ct);
 			System.out.println(ct);
+			break;
+			
+		case "AD":
+			category = EnumCategory.AD;
+			//bonus is fixed value for admin so no extra input necessary
+				
+			//Enter a new tester into the employee program
+			CategoryAdmin ca = new CategoryAdmin(inputName, inputSalary, inputYearOfBirth, category);
+			employeeList.add(ca);
+			System.out.println(ca);
+			break;
+			
+		case "MG":
+			category = EnumCategory.MG;
+			int noOfNewCustomers = ScannerMethods.scannerInt("Number of programs tested:");
+			
+			//Enter a new tester into the employee program
+			CategoryMarketing cg = new CategoryMarketing(inputName, inputSalary, inputYearOfBirth, category, noOfNewCustomers);
+			employeeList.add(cg);
+			System.out.println(cg);
 			break;
 		}
 
