@@ -3,8 +3,8 @@ package groupworkNamaste;
 public class CategoryTesters extends SuperClassEmployee {
 	int noOfTestedProjects;
 	
-		public CategoryTesters(String name, double salary, int yearOfBirth, String department, int noOfTestedProjects) {
-		super(name, salary, yearOfBirth, department);
+		public CategoryTesters(String name, double salary, int yearOfBirth, EnumCategory category, int noOfTestedProjects) {
+		super(name, salary, yearOfBirth, category);
 		this.noOfTestedProjects = noOfTestedProjects;
 		}
 		

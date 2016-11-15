@@ -4,8 +4,8 @@ public class CategoryAdmin extends SuperClassEmployee {
 
 	private int fixedValueBonus = 100;
 
-	public CategoryAdmin(String name, double salary, int yearOfBirth, String department) {
-		super(name, salary, yearOfBirth, department);
+	public CategoryAdmin(String name, double salary, int yearOfBirth, EnumCategory category) {
+		super(name, salary, yearOfBirth, category);
 	}
 
 	@Override

@@ -1,11 +1,10 @@
 package groupworkNamaste;
 
 public class CategoryMarketing extends SuperClassEmployee {
-
 	private int noOfNewCustomers;
 
-	public CategoryMarketing(String name, double salary, int yearOfBirth, String department, int noOfNewCustomers) {
-		super(name, salary, yearOfBirth, department);
+	public CategoryMarketing(String name, double salary, int yearOfBirth, EnumCategory category, int noOfNewCustomers) {
+		super(name, salary, yearOfBirth, category);
 		this.noOfNewCustomers = noOfNewCustomers;
 
 	}

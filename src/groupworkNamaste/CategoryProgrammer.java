@@ -3,9 +3,9 @@ package groupworkNamaste;
 public class CategoryProgrammer extends SuperClassEmployee {
 	int noOfCompletedProjects;
 
-	public CategoryProgrammer(String name, double salary, int yearOfBirth, String department, 
+	public CategoryProgrammer(String name, double salary, int yearOfBirth, EnumCategory category, 
 			int noOfCompletedProjects) {
-		super(name, salary, yearOfBirth, department);
+		super(name, salary, yearOfBirth, category);
 		this.noOfCompletedProjects = noOfCompletedProjects;
 	}
 

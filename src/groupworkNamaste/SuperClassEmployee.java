@@ -4,29 +4,35 @@ public abstract class SuperClassEmployee {
 	private String name;
 	private double salary;
 	private int yearOfBirth;
-	private String department;
+	private EnumCategory category;
 	private int employmentId;
 	private static int counterId = 0;
 //	private double bonus;
 	
-
-	public SuperClassEmployee(String name, double salary, int yearOfBirth, String department) {
+	//CONSTRUCTOR
+	public SuperClassEmployee(String name, double salary, int yearOfBirth, EnumCategory category) {
 
 		counterId++;
 		this.employmentId = counterId;
 		this.name = name;
 		this.salary = salary;
 		this.yearOfBirth = yearOfBirth;
-		this.department = department;
-
+		this.category = category;
 	}
 
-	public String getDepartment() {
-		return department;
+	//ABSTRACT METHOD - enforcing every subclass to implement this method 
+	public abstract double bonusCalculation();
+	
+	
+	
+	
+	//GETTERS AND SETTERS
+	public EnumCategory getCategory() {
+		return category;
 	}
 
-	public void setDepartment(String department) {
-		this.department = department;
+	public void setCategory(EnumCategory category) {
+		this.category = category;
 	}
 
 	public String getName() {
@@ -40,9 +46,6 @@ public abstract class SuperClassEmployee {
 	public int getPersonelNumber() {
 		return yearOfBirth;
 	}
-
-	public abstract double bonusCalculation();
-
 
 	public static int getCounterId() {
 		return counterId;

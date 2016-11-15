@@ -8,8 +8,8 @@ public class MainMenu {
 	
 	public static void main(String[] args) {
 		
-		EmployeeManagement em = new EmployeeManagement();
-		em.enterEmployee();
+		
+		EmployeeManagement.enterEmployee();
 		
 		
 //		CategoryProgrammer programmer= new CategoryProgrammer("Mona", 123456789.1,1986,"Programmer",456,45);
