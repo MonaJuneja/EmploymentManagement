@@ -18,24 +18,12 @@ public class ScannerMethods {
 	}
 	
 	// for capturing user input in format: int
+	//adding extra line to deal with scanner bug
 	public static int scannerInt(String printString){
 		System.out.print(printString);
 		int inputInt = MainMenu.ourScanner.nextInt();
-		MainMenu.ourScanner.nextLine();
+		MainMenu.ourScanner.nextLine(); //after capturing an "int" we need to clean the input by capturing the "enter" (scanner bug)
 		return inputInt;
 	}
-	
-
-	
-//	System.out.print("Salary:");
-//	double inputSalary = MainMenu.ourScanner.nextDouble();
-//	System.out.print("Year of birth:");
-//	int inputYearOfBirth = MainMenu.ourScanner.nextInt();
-//	MainMenu.ourScanner.nextLine();
-//	System.out.println(
-//			"Employee category: \n(MT for Management, PR for Programmers, TE for Testers, AD for Admin MG for Marketing)");
-//
-//	String inputCategoryName = MainMenu.ourScanner.nextLine();
-	// TODO: CONTINUE WITH SWITCH
 
 }
