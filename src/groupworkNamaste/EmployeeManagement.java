@@ -14,18 +14,11 @@ public class EmployeeManagement {
 	// METHOD FOR ADDING NEW EMPLOYEES
 	public static void enterEmployee() {
 		EnumCategory category;
-		ScannerMethods.scannerString("Please enter the data related to the new employee.\nName:");
-		System.out.print("Please enter the data related to the new employee.\n" + "Name:");
-		String inputName = MainMenu.ourScanner.nextLine();
-		System.out.print("Salary:");
-		double inputSalary = MainMenu.ourScanner.nextDouble();
-		System.out.print("Year of birth:");
-		int inputYearOfBirth = MainMenu.ourScanner.nextInt();
-		MainMenu.ourScanner.nextLine();
-		System.out.println(
-				"Employee category: \n(MT for Management, PR for Programmers, TE for Testers, AD for Admin MG for Marketing)");
+		String inputName = ScannerMethods.scannerString("Please enter the data related to the new employee.\nName:");
+		double inputSalary = ScannerMethods.scannerDouble("Salary:");
+		int inputYearOfBirth = ScannerMethods.scannerInt("Year of birth:");
+		String inputCategoryName = ScannerMethods.scannerString("Employee category: \n(MT for Management, PR for Programmers, TE for Testers, AD for Admin MG for Marketing)");
 		
-		String inputCategoryName = MainMenu.ourScanner.nextLine();
 		// TODO: CONTINUE WITH SWITCH
 
 		switch (inputCategoryName) {
