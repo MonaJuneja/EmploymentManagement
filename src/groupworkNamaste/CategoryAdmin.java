@@ -11,6 +11,11 @@ public class CategoryAdmin extends SuperClassEmployee {
 	@Override
 	public double bonusCalculation() {
 		return 100;
+	
+	
+	
+	
+	
 	}
 
 }
