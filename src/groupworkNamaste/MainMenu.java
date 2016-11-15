@@ -42,7 +42,7 @@ public class MainMenu {
 
 			} // END OF SWITCH
 
-		} // END OF DO
+		} // END OF DO LOOP
 
 		while (x);
 		// END OF LOOP
