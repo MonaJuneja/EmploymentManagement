@@ -34,7 +34,6 @@ public class EmployeeManagement {
 			//CREATE A NEW MANAGEMENT PERSON
 			CategoryManagement cm = new CategoryManagement(inputName, inputSalary, inputYearOfBirth, category, inputYearsOfExperience);
 			employeeList.add(cm);
-			System.out.println(cm);
 			break;
 			
 		case "PR":
@@ -44,7 +43,6 @@ public class EmployeeManagement {
 			//Enter a new programmer into the employee program
 			CategoryProgrammer cp = new CategoryProgrammer(inputName, inputSalary, inputYearOfBirth, category, noOfCompletedProjects);
 			employeeList.add(cp);
-			System.out.println(cp);
 			break;
 			
 		case "TE":
@@ -54,7 +52,6 @@ public class EmployeeManagement {
 			//Enter a new tester into the employee program
 			CategoryTesters ct = new CategoryTesters(inputName, inputSalary, inputYearOfBirth, category, noOfTestedProjects);
 			employeeList.add(ct);
-			System.out.println(ct);
 			break;
 			
 		case "AD":
@@ -64,7 +61,6 @@ public class EmployeeManagement {
 			//Enter a new tester into the employee program
 			CategoryAdmin ca = new CategoryAdmin(inputName, inputSalary, inputYearOfBirth, category);
 			employeeList.add(ca);
-			System.out.println(ca);
 			break;
 			
 		case "MG":
@@ -74,7 +70,6 @@ public class EmployeeManagement {
 			//Enter a new tester into the employee program
 			CategoryMarketing cg = new CategoryMarketing(inputName, inputSalary, inputYearOfBirth, category, noOfNewCustomers);
 			employeeList.add(cg);
-			System.out.println(cg);
 			break;
 		}
 

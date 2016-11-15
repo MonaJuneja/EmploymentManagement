@@ -27,7 +27,7 @@ public abstract class SuperClassEmployee {
 	
 	@Override
 	public String toString() {
-		return "SuperClassEmployee [name=" + name + ", salary=" + salary + ", yearOfBirth=" + yearOfBirth
+		return "[name=" + name + ", salary=" + salary + ", yearOfBirth=" + yearOfBirth
 				+ ", category=" + category + ", employmentId=" + employmentId + "]";
 	}
 	
