@@ -23,15 +23,15 @@ public class EmployeeManagement {
 
 		//		TODO: CONTINUE WITH SWITCH
 
-//		switch(inputCategoryName){
-//		case 1: System.out.print("Years of experience:");
-//		int inputYearsOfExperience = MainMenu.ourScanner.nextInt();
-//		CategoryManagement cm = new CategoryManagement(inputName, inputSalary, inputYearOfBirth, inputCategoryName, inputYearsOfExperience);
-//		employeeList.add(cm);
-//		break;
-//		}
-//
-//	}
+		switch(inputCategoryName){
+		case 1: System.out.print("Years of experience:");
+		int inputYearsOfExperience = MainMenu.ourScanner.nextInt();
+		CategoryManagement cm = new CategoryManagement(inputName, inputSalary, inputYearOfBirth, inputCategoryName, inputYearsOfExperience);
+		employeeList.add(cm);
+		break;
+		}
+
+	}
 
 
 	//METHOD FOR DELETING EMPLOYEES
