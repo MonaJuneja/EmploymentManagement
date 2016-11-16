@@ -4,14 +4,31 @@ public class XElissaTestingMain {
 
 	public static void main(String[] args) {
 
+		EmployeeDataBase.employeesDataBase(); //create list
+//		EmployeeStatistics.sizeOfArrayList(); 
+		
+		EmployeeStatistics.findMinimumSalary();
+		EmployeeStatistics.findMaximumSalary();
+			
 		EmployeeStatistics.sizeOfArrayList();
+		EmployeeStatistics.printAll();
+		EmployeeStatistics.printMkt();
+		
+		XElissastestingMethods.printArrayList();
+		SuperClassEmployee a = EmployeeDataBase.findEmployee("Mona");
+		System.out.println(a);
+		System.out.println("sssssssssssssss");
+		EmployeeStatistics.sizeOfArrayList();
+		EmployeeDataBase.deleteEmployee("Emmi");
+		EmployeeStatistics.sizeOfArrayList();
+		
 		EmployeeStatistics.calculateTotalSalary();
 		EmployeeStatistics.calculateTotalBonus();
 		EmployeeStatistics.calculateTotalWages();
 		EmployeeStatistics.calculateAverageWage();
+		EmployeeStatistics.sizeOfArrayList();
 		
 		
-//		EmployeeStatistics.sizeOfArrayList();
 //		EmployeeDataBase.deleteEmployee("Nina");
 //		EmployeeStatistics.sizeOfArrayList();
 

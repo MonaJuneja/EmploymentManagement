@@ -14,29 +14,7 @@ public class XElissastestingMethods {
 		} return false;
 	}
 	
-	public static void printAll(){
-		System.out.println(SuperClassEmployee.getCounterId());
-		}
-	
-	public static void printAdmin(){
-		System.out.println(CategoryAdmin.getCounterAdmin());
-		}
-	
-	public static void printMgt(){
-		System.out.println(CategoryManagement.getCounterMgt());
-		}
-	
-	public static void printMkt(){
-		System.out.println(CategoryMarketing.getCounterMkt());
-		}
-	
-	public static void printPro(){
-		System.out.println(CategoryProgrammer.getCounterPro());
-		}
-	
-	public static void printTst(){
-		System.out.println(CategoryTesters.getCounterTst());
-		}
+
 	
 	
 //	EmployeeDataBase.addEmployees();

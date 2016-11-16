@@ -3,14 +3,16 @@ package groupworkNamaste;
 public class EmployeeDataBase {
 	
 	public static void deleteEmployee(String employeeName){
-		findEmployee("wantedName");
-		EmployeeManagement.employeeList.remove("wantedName");
+		EmployeeManagement.employeeList.remove(findEmployee(employeeName));
 	}
 	
 	public static SuperClassEmployee findEmployee(String wantedName){
-		for (SuperClassEmployee IndexPosition : EmployeeManagement.employeeList) {
-			if (IndexPosition.getName().equals(wantedName))
-			return IndexPosition;
+		for (SuperClassEmployee sce : EmployeeManagement.employeeList) {
+			if (sce.getName().equals(wantedName)){
+//				System.out.println(sce);
+//				System.out.println(sce.getName());
+				return sce;
+			}
 		} return null;
 		
 	}
@@ -35,21 +37,21 @@ public class EmployeeDataBase {
 		EmployeeManagement.employeeList.add(cp3);
 		CategoryProgrammer cp4 = new CategoryProgrammer("Emmi", 61789, 1986, EnumCategory.PR, 56);
 		EmployeeManagement.employeeList.add(cp4);
-		CategoryProgrammer cp5 = new CategoryProgrammer("Elissa", 800000, 1986, EnumCategory.PR, 100);
+		CategoryProgrammer cp5 = new CategoryProgrammer("Elissa", 80000, 1986, EnumCategory.PR, 100);
 		EmployeeManagement.employeeList.add(cp5);
-		CategoryProgrammer cp6 = new CategoryProgrammer("Mona", 800000, 1986, EnumCategory.PR, 100);
+		CategoryProgrammer cp6 = new CategoryProgrammer("Mona", 80000, 1986, EnumCategory.PR, 100);
 		EmployeeManagement.employeeList.add(cp6);
-		CategoryProgrammer cp7 = new CategoryProgrammer("Stella", 86789, 1986, EnumCategory.PR, 56);
+		CategoryProgrammer cp7 = new CategoryProgrammer("Stella", 76789, 1986, EnumCategory.PR, 56);
 		EmployeeManagement.employeeList.add(cp7);
-		CategoryProgrammer cp8 = new CategoryProgrammer("AnnSofie", 800000, 1986, EnumCategory.PR, 100);
+		CategoryProgrammer cp8 = new CategoryProgrammer("AnnSofie", 80000, 1986, EnumCategory.PR, 100);
 		EmployeeManagement.employeeList.add(cp8);
-		CategoryProgrammer cp9 = new CategoryProgrammer("Maria", 800000, 1986, EnumCategory.PR, 100);
+		CategoryProgrammer cp9 = new CategoryProgrammer("Maria", 80000, 1986, EnumCategory.PR, 100);
 		EmployeeManagement.employeeList.add(cp9);
 		CategoryProgrammer cp10 = new CategoryProgrammer("Alma", 57789, 1986, EnumCategory.PR, 56);
 		EmployeeManagement.employeeList.add(cp10);
 		CategoryProgrammer cp11 = new CategoryProgrammer("Viola", 57789, 1986, EnumCategory.PR, 56);
 		EmployeeManagement.employeeList.add(cp11);
-		CategoryProgrammer cp12 = new CategoryProgrammer("Bita", 800000, 1986, EnumCategory.PR, 100);
+		CategoryProgrammer cp12 = new CategoryProgrammer("Bita", 80000, 1986, EnumCategory.PR, 100);
 		EmployeeManagement.employeeList.add(cp12);
 		
 		
