@@ -29,7 +29,7 @@ public class MainMenu {
 
 			switch (choice) {
 			case 1:
-				System.out.println("work here");
+				EmployeeManagement.enterNewEmployee();
 				break;
 
 			case 2:
