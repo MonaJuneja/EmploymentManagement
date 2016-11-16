@@ -19,7 +19,7 @@ public class MainMenu {
 
 			// USER MAKES A CHOICE OF FOLLOWING
 			System.out.println("**************************");
-			System.out.println("1 - Employee managment");
+			System.out.println("1 - Employee management");
 			System.out.println("2 - Statistics");
 			System.out.println("3 - Exit");
 
