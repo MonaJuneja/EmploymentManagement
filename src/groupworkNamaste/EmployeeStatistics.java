@@ -6,7 +6,7 @@ public class EmployeeStatistics {
 
 	// SUBMENU for statistics
 	public static void subMenuStatistics() {
-		boolean x = true;
+		boolean x = true; //boolean used to run/break loop
 
 		// START CHOICE LOOP
 		do {// USER MAKES A CHOICE OF FOLLOWING
@@ -74,6 +74,7 @@ public class EmployeeStatistics {
 
 	}
 
+	//meethods to calculate size of arraylist, total and average salary, bonus, wage, minimum and maximum salary,
 	public static void sizeOfArrayList() {
 		System.out.println("Size of list: " + EmployeeManagement.employeeList.size());
 	}
@@ -140,6 +141,7 @@ public class EmployeeStatistics {
 		return max;
 	}
 
+	//methods used to print the number of employees in different categories
 	public static void printAll() {
 		System.out.println("The number of employees is " + SuperClassEmployee.getCounterId());
 	}
@@ -164,4 +166,35 @@ public class EmployeeStatistics {
 		System.out.println("The number of employees in this category is " + CategoryTesters.getCounterTst());
 	}
 
+	//methods used to calculate percentages
+	// TODO: integrate functionality
+	public static double percentageAdmin() {
+		double adminPercentage = CategoryAdmin.getCounterAdmin()/SuperClassEmployee.getCounterId();
+		System.out.println(adminPercentage);
+		return adminPercentage;
+	}
+	
+	public static double percentageManagement() {
+		double managementPercentage = CategoryManagement.getCounterMgt()/SuperClassEmployee.getCounterId();
+		System.out.println(managementPercentage);
+		return managementPercentage;
+	}
+	
+	public static double percentageMarketing() {
+		double marketingPercentage = CategoryMarketing.getCounterMkt()/SuperClassEmployee.getCounterId();
+		System.out.println(marketingPercentage);
+		return marketingPercentage;
+	}
+	
+	public static double percentageProgrammer() {
+		double programmerPercentage = CategoryProgrammer.getCounterPro()/SuperClassEmployee.getCounterId();
+		System.out.println(programmerPercentage);
+		return programmerPercentage;
+	}
+	
+		public static double percentageTester() {
+		double testerPercentage = CategoryTesters.getCounterTst()/SuperClassEmployee.getCounterId();
+		System.out.println(testerPercentage);
+		return testerPercentage;
+	}
 }
