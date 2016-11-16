@@ -9,7 +9,7 @@ public class MainMenu {
 	public static void main(String[] args) {
 		boolean x = true;
 		
-//     START CHOICE LOOP 
+//      START CHOICE LOOP 
 		do {
 
 			// USER MAKES A CHOICE OF FOLLOWING
