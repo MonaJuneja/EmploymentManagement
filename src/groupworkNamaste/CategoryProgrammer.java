@@ -29,7 +29,7 @@ public class CategoryProgrammer extends SuperClassEmployee {
 
 	@Override	//this method overrides the abstract method from the superclass
 	public void bonusCalculation() {
-		setBonus(noOfCompletedProjects * 300);
+		setBonus(noOfCompletedProjects * 150);
 		//setBonus is used to change the private variable in the super class
 	}
 
