@@ -1,9 +1,13 @@
 package groupworkNamaste;
 
 public class CategoryManagement extends SuperClassEmployee {
+		//One of the five employee category subclasses 
+
 	private static int counterMgt = 0;
 	private int mgtId;
+	
 	private int yearsOfExperience;
+	
 
 	//CONSTRUCTOR
 	public CategoryManagement(String name, double salary, int yearOfBirth, EnumCategory category, int yearsOfExperience) {
