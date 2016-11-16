@@ -28,6 +28,4 @@ public class CategoryAdmin extends SuperClassEmployee {
 	public static int getCounterAdmin() {
 		return counterAdmin;
 	}
-
-
 }
