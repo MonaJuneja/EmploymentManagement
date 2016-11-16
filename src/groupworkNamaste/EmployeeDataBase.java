@@ -1,27 +1,39 @@
 package groupworkNamaste;
 
 public class EmployeeDataBase {
+//this class handles the [imaginary] employee database and the array list
+//the class also handles methods such as printing arraylist, finding and removing employees
 	
+	//remove employees
+	//uses find method to find and then removes
 	public static void deleteEmployee(String employeeName){
 		EmployeeManagement.employeeList.remove(findEmployee(employeeName));
 	}
 	
+	//find employees
 	public static SuperClassEmployee findEmployee(String wantedName){
+		//enhanced for loop says
+		//look at all objects of type "SuperClassEmployee"
+		//for every "sce-object" of that type do something
+		//look in the arraylist defined
 		for (SuperClassEmployee sce : EmployeeManagement.employeeList) {
 			if (sce.getName().equals(wantedName)){
+				//checks if the name provided by the user is in the arraylist
 //				System.out.println(sce);
 //				System.out.println(sce.getName());
 				return sce;
 			}
-		} return null;
-		
+		} return null;		
 	}
 
+	//prints all contents in the arraylist
 	public static void printArrayList() {
 		for (SuperClassEmployee sce : EmployeeManagement.employeeList) {
 			System.out.println(sce);
 		}
 	}
+	
+	//the actual database
 	public static void employeesDataBase() {
 
 		// category management employees
@@ -52,10 +64,7 @@ public class EmployeeDataBase {
 		CategoryProgrammer cp11 = new CategoryProgrammer("Viola", 57789, 1986, EnumCategory.PR, 56);
 		EmployeeManagement.employeeList.add(cp11);
 		CategoryProgrammer cp12 = new CategoryProgrammer("Bita", 80000, 1986, EnumCategory.PR, 100);
-		EmployeeManagement.employeeList.add(cp12);
-		
-		
-		
+		EmployeeManagement.employeeList.add(cp12);		
 
 		// category tester employees
 		CategoryTesters ct1 = new CategoryTesters("Elis", 25000, 1979, EnumCategory.TE, 78);
@@ -86,6 +95,5 @@ public class EmployeeDataBase {
 		EmployeeManagement.employeeList.add(cg2);
 		CategoryMarketing cg3 = new CategoryMarketing("Mariya", 42500, 1988, EnumCategory.MG, 4500);
 		EmployeeManagement.employeeList.add(cg3);
-
 	}
 }
