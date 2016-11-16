@@ -1,6 +1,8 @@
 package groupworkNamaste;
 
 public class CategoryProgrammer extends SuperClassEmployee {
+		//One of the five employee category subclasses 
+
 	private static int counterPro = 0;
 	private int proId;
 	int noOfCompletedProjects;
