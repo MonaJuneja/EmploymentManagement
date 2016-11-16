@@ -7,14 +7,19 @@ public class MainMenu {
 	public static Scanner ourScanner = new Scanner(System.in);
 
 	public static void main(String[] args) {
+//<<<<<<< HEAD
+		//the main menu is the point of entry into our program
+
+//=======
 		boolean x = true;
+//>>>>>>> branch 'master' of https://github.com/MonaJuneja/EmploymentManagement.git
 		
 //      START CHOICE LOOP 
 		do {
 
 			// USER MAKES A CHOICE OF FOLLOWING
 			System.out.println("**************************");
-			System.out.println("1 - Employee managment");
+			System.out.println("1 - Employee management");
 			System.out.println("2 - Statistics");
 			System.out.println("3 - Exit");
 
@@ -24,7 +29,7 @@ public class MainMenu {
 
 			switch (choice) {
 			case 1:
-				System.out.println("work here");
+				EmployeeManagement.enterNewEmployee();
 				break;
 
 			case 2:
@@ -48,10 +53,14 @@ public class MainMenu {
 		// END OF LOOP
 
 		System.out.println("Good bye");
+		ourScanner.close();
 
 	} // END OF MAIN
 
 }// END OF CLASS
+
+
+
 
 
 
