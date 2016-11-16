@@ -18,8 +18,8 @@ public class EmployeeDataBase {
 	}
 
 	public static void printArrayList() {
-		for (SuperClassEmployee IndexPosition : EmployeeManagement.employeeList) {
-			System.out.println(IndexPosition);
+		for (SuperClassEmployee sce : EmployeeManagement.employeeList) {
+			System.out.println(sce);
 		}
 	}
 	public static void employeesDataBase() {

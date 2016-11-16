@@ -7,6 +7,7 @@ public class MainMenu {
 	public static Scanner ourScanner = new Scanner(System.in);
 
 	public static void main(String[] args) {
+		EmployeeDataBase.employeesDataBase(); //create list
 
 		//the main menu is the point of entry into our program
 		boolean x = true;
@@ -21,7 +22,7 @@ public class MainMenu {
 		do {
 
 			// USER MAKES A CHOICE OF FOLLOWING
-			System.out.println("**************************\n         TOPMENU\n**************************");
+			System.out.println("\n**************************\n         TOPMENU\n**************************");
 			System.out.println("1 - Employee management");
 			System.out.println("2 - Statistics");
 			System.out.println("3 - Exit");
@@ -36,7 +37,7 @@ public class MainMenu {
 				break;
 
 			case 2:
-				System.out.println("statistics to come");
+				EmployeeStatistics.subMenuStatistics();
 				break;
 
 			case 3:

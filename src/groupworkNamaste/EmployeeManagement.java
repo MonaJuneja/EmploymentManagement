@@ -12,7 +12,7 @@ public class EmployeeManagement {
 
 		// START CHOICE LOOP
 		do {// USER MAKES A CHOICE OF FOLLOWING
-			System.out.println("  *~^~*~^~*~^~*~^~*~^~*\n    SUBMENU MANAGEMENT\n  *~^~*~^~*~^~*~^~*~^~*");
+			System.out.println("\n  *~^~*~^~*~^~*~^~*~^~*\n    SUBMENU MANAGEMENT\n  *~^~*~^~*~^~*~^~*~^~*");
 			System.out.println("1 - Add a new employee");
 			System.out.println("2 - Delete an employee");
 			System.out.println("3 - Update an employee");
