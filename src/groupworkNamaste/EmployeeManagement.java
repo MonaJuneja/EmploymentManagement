@@ -3,12 +3,13 @@ package groupworkNamaste;
 import java.util.ArrayList;
 
 public class EmployeeManagement {
-	// ArrayList of employees (includes all kinds of employees of all
+	// ArrayList of employees (includes all categories of employees)
 	static ArrayList<SuperClassEmployee> employeeList = new ArrayList<>();
 
 	// SUBMENU
+	//this submenu lets users add, print and delete entries into the database
 	public static void subMenu() {
-		boolean x = true;
+		boolean x = true; //boolean used to keep the loop running or end it
 
 		// START CHOICE LOOP
 		do {// USER MAKES A CHOICE OF FOLLOWING
@@ -23,20 +24,26 @@ public class EmployeeManagement {
 
 			switch (choice) {
 			case 1:
-				enterEmployee();
-				x = false;
+				enterEmployee(); // takes user to method that handles entry of new employees in system
+				x = false; //needed to break out of the loop once the user has finished entering the employee
 				break;
 
 			case 2:
-//				TODO: Fix Y/N input 
-//				System.out.println("Are you sure you want to delete an employee?");
+			// TODO: Fix Y/N input for additional security
+			// in next update make a loop for Y/N question
+			// System.out.println("Are you sure you want to delete an employee?");
 				String userInput = ScannerMethods.scannerString("Please enter the name of the employee you wish to remove from the system:");
-//				System.out.println("Are you sure you want to remove " + userInput + " from the employee register?");
+				// System.out.println("Are you sure you want to remove " + userInput + " from the employee register?");
 				EmployeeDataBase.deleteEmployee(userInput);
+				// deletes employee
+				//requires user input to know which employee to delete
+				//sends user input as parameter
 				x = false;
 				break;
 
 			case 3:
+				// TODO: add update employee functionality
+				//not implemented yet
 				System.out.println("Work in progress expected to be implemented by Dec 2017");
 				x = false;
 				break;
@@ -54,45 +61,40 @@ public class EmployeeManagement {
 
 		} // END OF DO LOOP
 
-		while (x);
+		while (x); //boolean used to keep the loop running or end it
 		// END OF LOOP
 
 	}
 
-	// METHOD FOR ADDING NEW EMPLOYEES
-	// To add a new employee you first need to capture all the data needed to
-	// enter the employee
-	// Basically it's the data you need for the constructors in the super and
-	// base classes
+// METHOD FOR ADDING NEW EMPLOYEES
+// To add a new employee you first need to capture all the data needed to enter the employee
+// Basically it's the data you need for the constructors in the super and base classes
 	public static void enterEmployee() {
-		// >>>>>>> branch 'master' of
-		// https://github.com/MonaJuneja/EmploymentManagement.git
-		EnumCategory category;
+		EnumCategory category; //Enums used for employee category
+		//user enters data of new employee
 		String inputName = ScannerMethods.scannerString("Please enter the data related to the new employee.\nName: ");
 		double inputSalary = ScannerMethods.scannerDouble("Salary: ");
 		int inputYearOfBirth = ScannerMethods.scannerInt("Year of birth: ");
-		// TODO: try-catch if/switch for incorrect input
+		// TODO: try-catch or exception if/switch for incorrect input
 		// TODO: if statement with logical OR || to check values
-		boolean x = true;
+		
+		boolean x = true; //boolean used to keep the loop running or end it
 		do {
 
 			String inputCategoryName = ScannerMethods.scannerString(
 					"Choose employee category; \n(MT) Management, (PR) Programmers, (TE) Testers, (AD) Admin, (MG) Marketing \nEmployee category:");
 
-			// TODO: CONTINUE WITH SWITCH
-			// TODO: ask Bardia for breaking loop and tagging loop and so on
 			// (MT for Management, PR for Programmers, TE for Testers, AD for
-			// Admin MG for Marketing)");
-
+			// Admin MG for Marketing)")
 			switch (inputCategoryName) {
 			case "MT":
 				category = EnumCategory.MT;
 				int inputYearsOfExperience = ScannerMethods.scannerInt("Years of experience: ");
-				// CREATE A NEW MANAGEMENT PERSON
+				// CREATE A NEW PERSON IN CATEGORY MANAGEMENT
 				CategoryManagement cm = new CategoryManagement(inputName, inputSalary, inputYearOfBirth, category,
 						inputYearsOfExperience);
 				employeeList.add(cm);
-				x = false;
+				x = false; 
 				break;
 
 			case "PR":
