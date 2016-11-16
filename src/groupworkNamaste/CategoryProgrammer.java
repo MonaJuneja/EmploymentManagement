@@ -22,9 +22,8 @@ public class CategoryProgrammer extends SuperClassEmployee {
 	}
 
 	@Override
-	public double bonusCalculation() {
-		double programmerBonus = noOfCompletedProjects * 300;
-		return programmerBonus;
+	public void bonusCalculation() {
+		setBonus(noOfCompletedProjects * 300);
 	}
 
 	public static int getCounterPro() {

@@ -15,6 +15,11 @@ public class MainMenu {
 //>>>>>>> branch 'master' of https://github.com/MonaJuneja/EmploymentManagement.git
 		
 //      START CHOICE LOOP 
+		
+
+		
+	
+
 		do {
 
 			// USER MAKES A CHOICE OF FOLLOWING
@@ -29,7 +34,8 @@ public class MainMenu {
 
 			switch (choice) {
 			case 1:
-				System.out.println("work here");
+//				EmployeeManagement.enterEmployee();
+				System.out.println("woooooork needed on loop");
 				break;
 
 			case 2:
@@ -45,13 +51,14 @@ public class MainMenu {
 				System.out.println("Give a number btw 1-3");
 				break;
 
-			} // END OF SWITCH
+			} 
+			// END OF SWITCH
 
 		} // END OF DO LOOP
 
 		while (x);
 		// END OF LOOP
-
+		
 		System.out.println("Good bye");
 		ourScanner.close();
 

@@ -19,10 +19,9 @@ public class CategoryTesters extends SuperClassEmployee {
 		this.noOfTestedProjects = yearOfExperince;
 	}
 
-
-	public double bonusCalculation(){
-		double testerBonus = noOfTestedProjects * 150;
-		return testerBonus;
+	@Override
+	public void bonusCalculation(){
+		setBonus(noOfTestedProjects * 150);
 	}
 
 	public static int getCounterTst() {

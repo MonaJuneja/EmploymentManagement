@@ -8,7 +8,7 @@ public abstract class SuperClassEmployee {
 	private EnumCategory category;
 	private int employmentId;
 	private static int counterId = 0;
-//	private double bonus;
+	private double bonus;
 	
 	//CONSTRUCTOR
 	public SuperClassEmployee(String name, double salary, int yearOfBirth, EnumCategory category) {
@@ -22,7 +22,7 @@ public abstract class SuperClassEmployee {
 	}
 
 	//ABSTRACT METHOD - enforcing every subclass to implement this method 
-	public abstract double bonusCalculation();
+	public abstract void bonusCalculation();
 	
 	
 	@Override
@@ -60,6 +60,17 @@ public abstract class SuperClassEmployee {
 		return employmentId;
 	}
 
+	public double getBonus() {
+		return bonus;
+	}
+	
+	public void setBonus(double bonus) {
+		this.bonus = bonus;
+	}
+
+	public double getSalary() {
+		return salary;
+	}
 
 
 

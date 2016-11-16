@@ -83,8 +83,14 @@ public class EmployeeManagement {
 			//going back into loop
 		
 		}while(true);
+		
 			
-	}
+	} //enterEmployee()
+	
+//	public static void deleteEmployee(String employeeName){
+//		EmployeeManagement.employeeList.remove(employeeName);
+//			
+//	}
 
 	// METHOD FOR DELETING EMPLOYEES
 

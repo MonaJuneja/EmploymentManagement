@@ -14,8 +14,8 @@ public class CategoryAdmin extends SuperClassEmployee {
 	}
 
 	@Override
-	public double bonusCalculation() {
-		return 100;	
+	public void bonusCalculation() {
+		setBonus(100);	
 	}
 	
 	public static int getCounterAdmin() {

@@ -1,8 +1,26 @@
 package groupworkNamaste;
 
 public class EmployeeDataBase {
+	
+	public static void deleteEmployee(String employeeName){
+		findEmployee("wantedName");
+		EmployeeManagement.employeeList.remove("wantedName");
+	}
+	
+	public static SuperClassEmployee findEmployee(String wantedName){
+		for (SuperClassEmployee IndexPosition : EmployeeManagement.employeeList) {
+			if (IndexPosition.getName().equals(wantedName))
+			return IndexPosition;
+		} return null;
+		
+	}
 
-	public static void addEmployees() {
+	public static void printArrayList() {
+		for (SuperClassEmployee IndexPosition : EmployeeManagement.employeeList) {
+			System.out.println(IndexPosition);
+		}
+	}
+	public static void employeesDataBase() {
 
 		// category management employees
 		CategoryManagement cm1 = new CategoryManagement("Monika", 56789, 1986, EnumCategory.MT, 23);
@@ -33,6 +51,9 @@ public class EmployeeDataBase {
 		EmployeeManagement.employeeList.add(cp11);
 		CategoryProgrammer cp12 = new CategoryProgrammer("Bita", 800000, 1986, EnumCategory.PR, 100);
 		EmployeeManagement.employeeList.add(cp12);
+		
+		
+		
 
 		// category tester employees
 		CategoryTesters ct1 = new CategoryTesters("Elis", 25000, 1979, EnumCategory.TE, 78);
