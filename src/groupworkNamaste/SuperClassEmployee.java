@@ -30,6 +30,7 @@ public abstract class SuperClassEmployee {
 		return "[name=" + name + ", salary=" + salary + ", yearOfBirth=" + yearOfBirth
 				+ ", category=" + category + ", employmentId=" + employmentId + "]";
 	}
+	//TODO: få fram employment ID
 	
 	//GETTERS AND SETTERS
 	public EnumCategory getCategory() {
@@ -60,6 +61,11 @@ public abstract class SuperClassEmployee {
 		return employmentId;
 	}
 
+	public double getSalary(){
+		return salary;
+	}
+	
+	
 	public double getBonus() {
 		return bonus;
 	}
@@ -68,9 +74,6 @@ public abstract class SuperClassEmployee {
 		this.bonus = bonus;
 	}
 
-	public double getSalary() {
-		return salary;
-	}
 
 
 
