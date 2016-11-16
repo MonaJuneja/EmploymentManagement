@@ -33,12 +33,6 @@ public class MainMenu {
 			switch (choice) {
 			case 1:
 				EmployeeManagement.subMenu();
-
-//				EmployeeManagement.enterEmployee();
-				System.out.println("woooooork needed on loop");
-
-				//EmployeeManagement.enterNewEmployee();
-
 				break;
 
 			case 2:
