@@ -14,9 +14,8 @@ public class CategoryManagement extends SuperClassEmployee {
 	}
 
 	@Override
-	public double bonusCalculation() {
-		double managementBonus = yearsOfExperience * 500;
-		return managementBonus;
+	public void bonusCalculation() {
+		setBonus(yearsOfExperience * 500);
 		}
 
 	public int getYearsOfExperience() {

@@ -14,10 +14,9 @@ public class CategoryMarketing extends SuperClassEmployee {
 	}
 
 	@Override
-	public double bonusCalculation() {
-		double marketingBonus = noOfNewCustomers * 20;
-		return marketingBonus;
-	}
+	public void bonusCalculation() {
+		setBonus(noOfNewCustomers * 20);
+		}
 
 	public int getNoOfNewCustomers() {
 		return noOfNewCustomers;
