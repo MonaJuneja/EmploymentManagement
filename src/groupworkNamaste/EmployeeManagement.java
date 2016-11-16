@@ -135,21 +135,7 @@ public class EmployeeManagement {
 //		System.out.println(" , "+employeeList.get(SuperClassEmployee.getCounterId()-1).getSalary());
 		
 	}//END METHOD
-	//	}while(true);
-		
-			
-	} //enterEmployee()
 	
-//	public static void deleteEmployee(String employeeName){
-//		EmployeeManagement.employeeList.remove(employeeName);
-//			
-//	}
-
-	// METHOD FOR DELETING EMPLOYEES
-
-	// THE NESTED CLASS INSIDE THIS CLASS EmployeeManagement
-	class EmployeeUpdate {
-
-	}// end class EmployeeUpdate
-
-}
+}//END CLASS		
+			
+	
