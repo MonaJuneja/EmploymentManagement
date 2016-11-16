@@ -18,11 +18,13 @@ public class CategoryAdmin extends SuperClassEmployee {
 		this.adminId = counterAdmin;
 	}
 
+	//this method overrides the abstract method from the superclass
 	@Override
 	public void bonusCalculation() {
 		setBonus(100);	
 	}
 	
+	//this method is used when we need the number of personnel in the admin category
 	public static int getCounterAdmin() {
 		return counterAdmin;
 	}
