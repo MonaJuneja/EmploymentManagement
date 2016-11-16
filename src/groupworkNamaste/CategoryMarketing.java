@@ -1,6 +1,8 @@
 package groupworkNamaste;
 
 public class CategoryMarketing extends SuperClassEmployee {
+		//One of the five employee category subclasses 
+
 	private static int counterMkt = 0;
 	private int mktId;
 	private int noOfNewCustomers;
