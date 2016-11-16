@@ -53,6 +53,7 @@ public class MainMenu {
 		// END OF LOOP
 
 		System.out.println("Good bye");
+		ourScanner.close();
 
 	} // END OF MAIN
 
