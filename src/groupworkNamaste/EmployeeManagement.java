@@ -21,9 +21,12 @@ public class EmployeeManagement {
 		int inputYearOfBirth = ScannerMethods.scannerInt("Year of birth:");
 		//TODO: try-catch if/switch for incorrect input
 		//TODO: if statement with logical OR || to check values
+		do{		
+		
 		String inputCategoryName = ScannerMethods.scannerString("Employee category: \n(MT for Management, PR for Programmers, TE for Testers, AD for Admin MG for Marketing)");
 		
 		// TODO: CONTINUE WITH SWITCH
+		//TODO: ask Bardia for breaking loop and tagging loop and so on
 //(MT for Management, PR for Programmers, TE for Testers, AD for Admin MG for Marketing)");
 		
 		switch (inputCategoryName) {
@@ -71,8 +74,16 @@ public class EmployeeManagement {
 			CategoryMarketing cg = new CategoryMarketing(inputName, inputSalary, inputYearOfBirth, category, noOfNewCustomers);
 			employeeList.add(cg);
 			break;
-		}
+			
+		default:
+			System.out.println("Invalid input, please enter a valid choice.");
+			continue;		
+			}
 
+			//going back into loop
+		
+		}while(true);
+			
 	}
 
 	// METHOD FOR DELETING EMPLOYEES

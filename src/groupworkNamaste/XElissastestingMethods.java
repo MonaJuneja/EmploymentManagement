@@ -49,6 +49,18 @@ public class XElissastestingMethods {
 //		System.out.println("The array is empty.");
 //	}
 	
+//	//the main menu is the point of entry into our program
+////	EmployeeDataBase.addEmployees();
+////	XElissastestingMethods.printAdmin();
+//	EmployeeManagement.enterEmployee();
+//	
+//	if (XElissastestingMethods.checkIfArrayIsEmpty()){
+//		XElissastestingMethods.printArrayList();
+//	} else {
+//		System.out.println("The array is empty.");
+//	}
+//
+	
 
 //	CategoryProgrammer programmer= new CategoryProgrammer("Mona", 123456789.1,1986,"Programmer",456,45);
 //	CategoryProgrammer programmer2= new CategoryProgrammer("Maria", 12345,1990,"Programmer",456,45);
