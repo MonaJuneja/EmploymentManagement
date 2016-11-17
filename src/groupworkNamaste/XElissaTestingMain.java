@@ -7,26 +7,29 @@ public class XElissaTestingMain {
 		EmployeeDataBase.employeesDataBase(); //create list
 //		EmployeeStatistics.sizeOfArrayList(); 
 		
-		EmployeeStatistics.findMinimumSalary();
-		EmployeeStatistics.findMaximumSalary();
-			
-		EmployeeStatistics.sizeOfArrayList();
-		EmployeeStatistics.printAll();
-		EmployeeStatistics.printMkt();
+//		EmployeeStatistics.findMinimumSalary();
+//		EmployeeStatistics.findMaximumSalary();
+//			
+//		EmployeeStatistics.sizeOfArrayList();
+//		EmployeeStatistics.printAll();
+//		EmployeeStatistics.printMkt();
+//		
+//		XElissastestingMethods.printArrayList();
+//		SuperClassEmployee a = EmployeeDataBase.findEmployee("Mona");
+//		System.out.println(a);
+//		System.out.println("sssssssssssssss");
+//		EmployeeStatistics.sizeOfArrayList();
+//		EmployeeDataBase.deleteEmployee("Emmi");
+//		EmployeeStatistics.sizeOfArrayList();
+//		
+//		EmployeeStatistics.calculateTotalSalary();
+//		EmployeeStatistics.calculateTotalBonus();
+//		EmployeeStatistics.calculateTotalWages();
+//		EmployeeStatistics.calculateAverageWage();
+//		EmployeeStatistics.sizeOfArrayList();
 		
-		XElissastestingMethods.printArrayList();
-		SuperClassEmployee a = EmployeeDataBase.findEmployee("Mona");
-		System.out.println(a);
-		System.out.println("sssssssssssssss");
-		EmployeeStatistics.sizeOfArrayList();
-		EmployeeDataBase.deleteEmployee("Emmi");
-		EmployeeStatistics.sizeOfArrayList();
-		
-		EmployeeStatistics.calculateTotalSalary();
-		EmployeeStatistics.calculateTotalBonus();
-		EmployeeStatistics.calculateTotalWages();
-		EmployeeStatistics.calculateAverageWage();
-		EmployeeStatistics.sizeOfArrayList();
+		EmployeeStatistics.printPercentages();
+		EmployeeStatistics.percentageAdmin();
 		
 		
 //		EmployeeDataBase.deleteEmployee("Nina");

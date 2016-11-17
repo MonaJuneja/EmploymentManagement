@@ -2,7 +2,11 @@ package groupworkNamaste;
 
 public class EmployeeStatistics {
 
-	// percentages?
+	private static double adminPercentage;
+	private static double managementPercentage;
+	private static double marketingPercentage;
+	private static double programmerPercentage;
+	private static double testerPercentage;
 
 	// SUBMENU for statistics
 	public static void subMenuStatistics() {
@@ -19,7 +23,8 @@ public class EmployeeStatistics {
 			System.out.println("6 - Find maximum salary");
 			System.out.println("7 - Print number of employees");
 			System.out.println("8 - Print all data");
-			System.out.println("9 - Exit the statistics menu");
+			System.out.println("9 - Print percentages of personell categories");
+			System.out.println("10 - Exit the statistics menu");
 			System.out.println("\nChoose acitivity by number ");
 			int choice = MainMenu.ourScanner.nextInt();
 			MainMenu.ourScanner.nextLine(); // EMPTY SCANNER
@@ -58,6 +63,10 @@ public class EmployeeStatistics {
 				break;
 				
 			case 9:
+				printPercentages();
+				break;
+				
+			case 10:
 				x = false; // SET EXIT LOOP VALUE
 				break;
 
@@ -168,33 +177,44 @@ public class EmployeeStatistics {
 
 	//methods used to calculate percentages
 	// TODO: integrate functionality
+	
+	
+	
+	public static void printPercentages() {
+		System.out.println("The percentage of personnel that work in administration is " + ((double)CategoryAdmin.getCounterAdmin()/(double)SuperClassEmployee.getCounterId()*100) + "%");
+		System.out.println("The percentage of personnel that work in management is " + ((double)CategoryManagement.getCounterMgt()/(double)SuperClassEmployee.getCounterId()*100) + "%");
+		System.out.println("The percentage of personnel that work in marketing is " + ((double)CategoryMarketing.getCounterMkt()/(double)SuperClassEmployee.getCounterId()*100) + "%");
+		System.out.println("The percentage of programmers in the company is " + ((double)CategoryProgrammer.getCounterPro()/(double)SuperClassEmployee.getCounterId()*100) + "%");
+		System.out.println("The percentage of testers in the company is " + ((double)CategoryTesters.getCounterTst()/(double)SuperClassEmployee.getCounterId()*100) + "%");
+		}
+	
 	public static double percentageAdmin() {
-		double adminPercentage = CategoryAdmin.getCounterAdmin()/SuperClassEmployee.getCounterId();
-		System.out.println(adminPercentage);
+		double adminPercentage = ((double)CategoryAdmin.getCounterAdmin()/(double)SuperClassEmployee.getCounterId()*100);
+		System.out.println("The percentage of personnel in administration is " + adminPercentage + "%");
 		return adminPercentage;
 	}
 	
 	public static double percentageManagement() {
-		double managementPercentage = CategoryManagement.getCounterMgt()/SuperClassEmployee.getCounterId();
-		System.out.println(managementPercentage);
+		double managementPercentage = ((double)CategoryManagement.getCounterMgt()/(double)SuperClassEmployee.getCounterId()*100);
+		System.out.println("The percentage of personnel in management is " + managementPercentage + "%");
 		return managementPercentage;
 	}
 	
 	public static double percentageMarketing() {
-		double marketingPercentage = CategoryMarketing.getCounterMkt()/SuperClassEmployee.getCounterId();
-		System.out.println(marketingPercentage);
+		double marketingPercentage = ((double)CategoryMarketing.getCounterMkt()/(double)SuperClassEmployee.getCounterId()*100);
+		System.out.println("The percentage of personnel in marketing is " + marketingPercentage + "%");
 		return marketingPercentage;
 	}
 	
 	public static double percentageProgrammer() {
-		double programmerPercentage = CategoryProgrammer.getCounterPro()/SuperClassEmployee.getCounterId();
-		System.out.println(programmerPercentage);
+		double programmerPercentage = ((double)CategoryProgrammer.getCounterPro()/(double)SuperClassEmployee.getCounterId()*100);
+		System.out.println("The percentage of programmers in the company is " + programmerPercentage + "%");
 		return programmerPercentage;
 	}
 	
 		public static double percentageTester() {
-		double testerPercentage = CategoryTesters.getCounterTst()/SuperClassEmployee.getCounterId();
-		System.out.println(testerPercentage);
+		double testerPercentage = ((double)CategoryTesters.getCounterTst()/(double)SuperClassEmployee.getCounterId()*100);
+		System.out.println("The percentage of testers in the company is " + testerPercentage + "%");
 		return testerPercentage;
 	}
 }
